@@ -1,0 +1,128 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.main-content h1 {
+  color: #3A4993;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.footer {
+  padding: 10px;
+  color: #223B61;;
+  text-align: center;
+}
+.description {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  max-width: 800px;
+  color: #223B61;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  /* Centering the description container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure the entire container centers its content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the children horizontally */
+  justify-content: center; /* Centers the children vertically */
+  min-height: 100vh;
+  text-align: center; /* Ensures text is centered */
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items within the main content */
+}
+
+.description h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #3A4993;
+}
+
+.description p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .description h3 {
+    font-size: 1.5rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+}
